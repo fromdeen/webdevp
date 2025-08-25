@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinanda Diara - Creative Technology Agency</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f6f0;
+            color: #1a1a1a;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #1e3a8a, #87a96b);
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #800020;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+        .btn:hover {
+            transform: translateY(-5px);
+        }
+        .section {
+            padding: 80px 0;
+        }
+        .project {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-10px);
+        }
+        .project h3 {
+            color: #1e3a8a;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        .project h4 {
+            color: #800020;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        .project p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .skill-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .skill-card:hover {
+            transform: translateY(-10px);
+        }
+        .skill-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+        .testimonials {
+            background: white;
+            padding: 80px 0;
+        }
+        .testimonial {
+            background: #f8f6f0;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 15px;
+            border-left: 5px solid #87a96b;
+        }
+        .contact {
+            background: #1e3a8a;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .contact h2 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .contact-item {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        .stat {
+            text-align: center;
+            margin: 20px;
+        }
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #87a96b;
+        }
+        .stat-label {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>WHERE CODE MEETS CREATIVITY</h1>
+            <p>Award-winning Creative Technologist crafting immersive digital experiences for 40M+ users worldwide</p>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">40M+</div>
+                    <div class="stat-label">Users Served</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">8+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">99.8%</div>
+                    <div class="stat-label">Uptime</div>
+                </div>
+            </div>
+            <a href="#projects" class="btn">Explore My Universe</a>
+            <a href="#contact" class="btn">Let's Create</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 3rem; margin-bottom: 50px; color: #1e3a8a;">SIGNATURE PROJECTS</h2>
+            
+            <div class="project" onclick="window.open('roblox-project.html', '_blank')">
+                <h3>PROJECT 01: ROBLOX UNIVERSE</h3>
+                <h4>"Crafting Dreams for 40 Million Daily Adventurers"</h4>
+                <p><strong>Challenge:</strong> Create immersive, cross-platform experiences for PC, mobile, and console users</p>
+                <p><strong>Solution:</strong> Revolutionary UI framework in Luau with real-time API integration</p>
+                <p><strong>Impact:</strong> 15% increase in user satisfaction, 20% code efficiency improvement</p>
+                <p><strong>Tech Stack:</strong> Luau, Roblox Studio, Advanced API Integration</p>
+            </div>
+
+            <div class="project" onclick="window.open('tomps-project.html', '_blank')">
+                <h3>PROJECT 02: TOMPS ENTERPRISE REVOLUTION</h3>
+                <h4>"Transforming Government Infrastructure Through Digital Innovation"</h4>
+                <p><strong>Challenge:</strong> Build bulletproof QA systems for 65+ State-Owned Enterprises</p>
+                <p><strong>Solution:</strong> AI-powered automation suite with 99.8% uptime guarantee</p>
+                <p><strong>Impact:</strong> 45% faster testing cycles, 40% reduced manual workload</p>
+                <p><strong>Tech Stack:</strong> Selenium, Advanced Analytics, CI/CD Pipeline</p>
+            </div>
+
+            <div class="project" onclick="window.open('kredivo-project.html', '_blank')">
+                <h3>PROJECT 03: KREDIVO GLOBAL EXPANSION</h3>
+                <h4>"Scaling Fintech Dreams Across Southeast Asia"</h4>
+                <p><strong>Challenge:</strong> Launch payment platform across Vietnam & Philippines</p>
+                <p><strong>Solution:</strong> Comprehensive localization and cross-border testing strategy</p>
+                <p><strong>Impact:</strong> <1% defect leakage, seamless multi-country deployment</p>
+                <p><strong>Tech Stack:</strong> Selenium, Appium, International Compliance Testing</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 3rem; margin-bottom: 50px; color: #1e3a8a;">CORE EXPERTISE</h2>
+            <div class="skills">
+                <div class="skill-card">
+                    <h3>Creative Development</h3>
+                    <ul>
+                        <li>Immersive UI/UX Design</li>
+                        <li>Cross-Platform Optimization</li>
+                        <li>Real-Time Interactive Systems</li>
+                        <li>Performance-Driven Architecture</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Quality Assurance Mastery</h3>
+                    <ul>
+                        <li>Zero-Downtime Deployments</li>
+                        <li>Automated Testing Frameworks</li>
+                        <li>International Compliance</li>
+                        <li>Enterprise-Grade Security</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Technical Innovation</h3>
+                    <ul>
+                        <li>Advanced API Integration</li>
+                        <li>Scalable System Architecture</li>
+                        <li>Multi-Language Localization</li>
+                        <li>Agile Leadership</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 3rem; margin-bottom: 50px; color: #1e3a8a;">CLIENT TESTIMONIALS</h2>
+            
+            <div class="testimonial">
+                <p style="font-size: 1.2rem; font-style: italic; margin-bottom: 20px;">"Dinanda's work on our Roblox platform was exceptional. Her UI framework increased user engagement by 15% and set new standards for our development team."</p>
+                <strong>Sarah Chen - Senior Product Manager, Roblox Corporation</strong>
+            </div>
+
+            <div class="testimonial">
+                <p style="font-size: 1.2rem; font-style: italic; margin-bottom: 20px;">"The QA automation suite Dinanda built for TOMPS reduced our testing cycles by 45%. Her attention to detail and technical expertise is unmatched."</p>
+                <strong>Ahmad Wijaya - CTO, Telkom Indonesia</strong>
+            </div>
+
+            <div class="testimonial">
+                <p style="font-size: 1.2rem; font-style: italic; margin-bottom: 20px;">"Dinanda led our international expansion flawlessly. Zero critical defects during our Vietnam and Philippines launch - absolutely remarkable."</p>
+                <strong>Maria Santos - Head of International, Kredivo</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>LET'S CREATE SOMETHING EXTRAORDINARY</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 40px;">Ready to Transform Your Digital Vision?</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>📍 Location</h4>
+                    <p>Jakarta, Indonesia<br>(Remote Worldwide)</p>
+                </div>
+                <div class="contact-item">
+                    <h4>📧 Email</h4>
+                    <p>deskaliem@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <h4>📱 Phone</h4>
+                    <p>+62-851-5675-4802</p>
+                </div>
+            </div>
+
+            <h3 style="margin: 50px 0 30px 0;">Available for:</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+                    <p>Creative Technology Consulting</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+                    <p>Full-Stack Development Projects</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+                    <p>QA Strategy & Implementation</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+                    <p>International Product Launches</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+                    <p>Team Leadership & Mentoring</p>
+                </div>
+            </div>
+
+            <a href="mailto:deskaliem@gmail.com" class="btn" style="margin-top: 40px;">Contact Me Now</a>
+        </div>
+    </section>
+
+    <script>
+        // Simple click sound effect
+        document.addEventListener('click', function(e) {
+            if (e.target.matches('a, .project, .btn')) {
+                // Create audio context for click sound
+                const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                const oscillator = audioContext.createOscillator();
+                const gainNode = audioContext.createGain();
+                
+                oscillator.connect(gainNode);
+                gainNode.connect(audioContext.destination);
+                
+                oscillator.frequency.value = 800;
+                oscillator.type = 'sine';
+                
+                gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
+                
+                oscillator.start(audioContext.currentTime);
+                oscillator.stop(audioContext.currentTime + 0.1);
+            }
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
